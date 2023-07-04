@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="550.0" prefWidth="701.0" stylesheets="@../Styles/Main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainView">
+   <children>
+      <AnchorPane styleClass="title">
+         <children>
+            <Label fx:id="date" alignment="CENTER" contentDisplay="RIGHT" layoutY="9.0" prefHeight="18.0" prefWidth="174.0" styleClass="hbox-title" text="Fecha/Semana/Etc" AnchorPane.leftAnchor="13.0" />
+            <HBox alignment="CENTER" prefHeight="45.0" prefWidth="701.0">
+               <children>
+                  <Button fx:id="daily" mnemonicParsing="false" prefHeight="51.0" prefWidth="100.0" text="Diario" />
+                  <Button fx:id="weekly" mnemonicParsing="false" prefHeight="51.0" prefWidth="100.0" text="Semanal" />
+                  <Button fx:id="monthly" mnemonicParsing="false" prefHeight="51.0" prefWidth="100.0" text="Mensual" />
+               </children>
+            </HBox>
+            <Label fx:id="hour" layoutY="7.0" prefHeight="32.0" prefWidth="69.0" text="Label" AnchorPane.rightAnchor="10.0" />
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="508.0" prefWidth="701.0">
+         <children>
+            <Pane prefHeight="505.0" prefWidth="205.0">
+               <children>
+                  <Button fx:id="previous" alignment="CENTER" contentDisplay="CENTER" layoutX="47.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Anterior" />
+                  <DatePicker fx:id="datePicker" layoutX="15.0" layoutY="345.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="505.0" prefWidth="338.0">
+               <children>
+                  <ScrollPane prefHeight="505.0" prefWidth="318.0" style="-fx-background-color: ffffff;">
+                     <content>
+                        <VBox fx:id="listOfReminders" fillWidth="false" prefWidth="279.0" style="-fx-background-color: ffffff;">
+                           <effect>
+                              <Glow />
+                           </effect></VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Pane>
+            <Pane prefHeight="505.0" prefWidth="202.0">
+               <children>
+                  <Button fx:id="next" alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="108.0" text="Posterior" />
+                  <MenuButton fx:id="add" alignment="CENTER" layoutX="129.0" layoutY="439.0" mnemonicParsing="false" popupSide="LEFT" prefHeight="45.0" prefWidth="50.0" text="+" textAlignment="CENTER">
+                    <items>
+                      <MenuItem fx:id="addEvent" mnemonicParsing="false" text="Agregar evento" />
+                      <MenuItem fx:id="addTask" mnemonicParsing="false" text="Agregar tarea" />
+                    </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</VBox>

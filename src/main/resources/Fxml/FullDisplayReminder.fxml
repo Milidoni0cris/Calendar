@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="mainVbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="490.0" styleClass="mainVbox" stylesheets="@../Styles/FullDisplayReminder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.FullDisplayReminderView">
+   <children>
+      <Pane>
+         <children>
+            <Label fx:id="reminderName" alignment="CENTER" layoutX="2.0" prefHeight="47.0" prefWidth="320.0" style="-fx-font-size: 20; -fx-background-color: #cdcdcd;" text="Nombre" />
+            <CheckBox fx:id="completed" layoutX="360.0" layoutY="5.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="116.0" text="Completado" />
+         </children>
+      </Pane>
+      <VBox>
+         <children>
+            <Label fx:id="reminderDate" alignment="CENTER" prefHeight="34.0" prefWidth="490.0" style="-fx-font-size: 15;" text="Fechas" />
+            <Label fx:id="reminderRepetition" alignment="CENTER" prefHeight="37.0" prefWidth="490.0" style="-fx-font-size: 15;" text="Repeticion" />
+         </children>
+      </VBox>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="Descripción:" wrappingWidth="490.13671875" />
+      <Label fx:id="reminderDescription" alignment="TOP_LEFT" prefHeight="91.0" prefWidth="490.0" text="Descripcion" />
+      <Pane prefHeight="97.0" prefWidth="474.0">
+         <children>
+            <VBox layoutX="65.0" prefHeight="97.0" prefWidth="320.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alarmas:" />
+                  <ScrollPane prefHeight="78.0" prefWidth="304.0">
+                    <content>
+                        <VBox fx:id="alarmVbox" prefHeight="78.0" prefWidth="304.0" />
+                    </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+            <ImageView fitHeight="34.0" fitWidth="25.0" layoutX="23.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/alarmImage.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</VBox>

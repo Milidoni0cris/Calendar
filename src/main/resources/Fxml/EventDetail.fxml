@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane stylesheets="@../Styles/EventDetail.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox fx:id="mainVbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="500.0">
+         <children>
+            <HBox fx:id="hboxTitleEvent" prefHeight="59.0" prefWidth="600.0" styleClass="title">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="229.0" text="Nombre del evento">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button mnemonicParsing="false" text="Editar">
+                     <HBox.margin>
+                        <Insets left="200.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="600.0" styleClass="hbox-fechas">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fecha-texto" text="Fecha:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="71.0" text="Fecha inicial" wrapText="true" />
+                  <Label text="Hora inicial" />
+                  <Label text="Fecha final" />
+                  <Label text="Hora final" />
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="500.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fecha-texto" text="Descripción: ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label prefHeight="93.0" prefWidth="432.0" text="Descripción del evento o tarea" wrapText="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="500.0">
+               <children>
+                  <Label styleClass="fecha-texto" text="Alarma: ">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label styleClass="fecha-texto" text="30 min antes de la fecha de inicio">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Repetición:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="repeticion etc">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

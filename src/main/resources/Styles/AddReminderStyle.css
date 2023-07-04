@@ -1,0 +1,82 @@
+.main{
+    -fx-spacing: 30;
+    -fx-background-color: #FFFFFF;
+}
+
+.hbox-title{
+    -fx-spacing: 40;
+}
+
+
+.check-box-custom {
+
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.2em;
+}
+
+/* Estilo del marcador de verificación */
+.check-box-custom .box {
+    -fx-background-color: #CCCCCC;
+}
+
+/* Estilo del marcador de verificación (check) */
+.check-box-custom .box .mark {
+
+}
+
+/* Estilo del texto del CheckBox */
+.check-box-custom .label {
+    -fx-font-size: 14px;
+}
+
+/* Estilo personalizado para el TextField */
+.text-field-custom {
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 5px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Estilo del texto dentro del TextField */
+.text-field-custom .text {
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+/* Estilo personalizado para el MenuButton */
+.menu-button-custom {
+    -fx-min-width: 100px; /* Tamaño mínimo en ancho */
+    -fx-max-width: 200px; /* Tamaño máximo en ancho */
+    -fx-min-height: 30px; /* Tamaño mínimo en alto */
+    -fx-max-height: 60px; /* Tamaño máximo en alto */
+
+
+}
+
+/* Estilo personalizado para el menú desplegable del MenuButton */
+.menu-button-custom .menu-item .label {
+    -fx-padding: 5px 10px; /* Ajusta el padding (espaciado interno) de las opciones del menú */
+    -fx-font-size: 14px; /* Ajusta el tamaño de fuente de las opciones del menú */
+}
+
+.menu-button-custom .menu-item .label:hover {
+    -fx-background-color: #ECECEC; /* Cambia el color de fondo al pasar el cursor sobre las opciones del menú */
+}
+
+.menu-button-custom .menu-item:focused .label {
+    -fx-background-color: #ECECEC; /* Cambia el color de fondo de la opción del menú seleccionada */
+}
+
+.datesSelector{
+    -fx-spacing: 10;
+}
+
+.AlarmHbox{
+    -fx-spacing: 10;
+}
+
+.number{
+    -fx-text-fill: #ffffff;
+}

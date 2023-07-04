@@ -1,0 +1,15 @@
+
+:root{
+    --white: #ffffff
+}
+
+.buttonMain{
+    -fx-background-color: #ffffff;
+}
+
+.number{
+    -fx-background-color: var(--white);
+}
+
+
+

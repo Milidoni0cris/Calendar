@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="97.0" prefWidth="447.0" stylesheets="@../Styles/Notification.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NotificationView">
+   <children>
+      <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Notificacion" text="Notificación" wrappingWidth="70.0" />
+      <HBox layoutX="7.0" layoutY="44.0" prefHeight="53.0" prefWidth="464.0" styleClass="Hbox">
+         <children>
+            <Label fx:id="reminderName" prefHeight="20.0" prefWidth="110.0" text="Nombre de reminder" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Hbox" text="empieza a la(s)" textAlignment="JUSTIFY" wrappingWidth="82.0" />
+            <Label fx:id="hourReminder" text="hora del evento" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="del" wrappingWidth="20.13671875" />
+            <Label fx:id="dateReminder" text="Fecha del evento" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="17.0" fitWidth="20.0" layoutX="84.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/alarmImage.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

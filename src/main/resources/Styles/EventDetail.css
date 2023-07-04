@@ -1,0 +1,23 @@
+
+
+.title .label{
+    -fx-background-color: #F5F5F5;
+    -fx-background-radius: 5px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.title .label .text{
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+}
+
+.fecha-texto{
+    -fx-font-size: 12px;
+}
+
+.hbox-fechas {
+    -fx-spacing: 20;
+}
+
